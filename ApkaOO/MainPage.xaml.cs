@@ -2,7 +2,7 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        
 
         public MainPage()
         {
@@ -17,9 +17,27 @@
             RollValueLabel.Text = "Wylosowany rzut:"+ ApkaOO.ToString();
 
             SemanticScreenReader.Announce(RollValueLabel.Text);
-            //kostka k12
 
         }
+
+        
+        //private void OnRadioButtonCheckedChanged(object sender, CheckedChangedEventArgs e)
+        //{
+          //  if (e.Value)
+          //  {
+            //    var selectedRadioButton = sender as RadioButton;
+
+              //  if (selectedRadioButton != null)
+                //{
+                   
+                  //  if (selectedRadioButton.Content is Image image)
+                    //{
+                      
+                      //  MainImage.Source = image.Source;
+                    //}
+                //}
+            //}
+        //}
     }
 
 }

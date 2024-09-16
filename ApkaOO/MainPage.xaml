@@ -8,6 +8,7 @@
             Padding="30,0"
             Spacing="25">
             <Image
+                x:Name="MainImage"
                 Source="kostka.jpg"
                 HeightRequest="185"
                 Aspect="AspectFit"
@@ -22,7 +23,10 @@
 
             <StackLayout>
                 <Label Text="Wybierz kość do gry" />
+                <!-- kostka k4 -->
                 <RadioButton>
+
+                    
                     <RadioButton.Content>
                         <Image
                          Source="kostkak4.jfif" 
@@ -31,7 +35,9 @@
                />
                     </RadioButton.Content>
                 </RadioButton>
+                <!-- kostka k6 -->
                 <RadioButton>
+
                     <RadioButton.Content>
                         <Image
                             Source="kostka.jpg" 
@@ -40,7 +46,9 @@
                                />
                     </RadioButton.Content>
                 </RadioButton>
+                <!-- kostka k8 -->
                 <RadioButton>
+
                     <RadioButton.Content>
                         <Image 
                             Source="kostkak8.jfif"
@@ -48,7 +56,9 @@
                             Aspect="AspectFit"/>
                     </RadioButton.Content>
                 </RadioButton>
+                <!-- kostka k12 -->
                 <RadioButton>
+
                     <RadioButton.Content>
                         <Image Source="kostkak12.jfif" 
                                HeightRequest="185"
@@ -56,13 +66,14 @@
                     </RadioButton.Content>
                 </RadioButton>
             </StackLayout>
-
+            <!-- przycisk do rzutu -->
             <Button
                 x:Name="CounterBtn"
                 Text="Rzuć kostką" 
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+            <!-- wyswietlanie wyniku -->
             <Label
                 x:Name="RollValueLabel"
                 Text="Wynik rzutu: "
