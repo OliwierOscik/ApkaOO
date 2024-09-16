@@ -59,6 +59,7 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\kostka.jpg" />
 	  <None Remove="Resources\Images\kostkak12.jfif" />
+	  <None Remove="Resources\Images\kostkak4.jfif" />
 	  <None Remove="Resources\Images\kostkak8.jfif" />
 	</ItemGroup>
 

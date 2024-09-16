@@ -11,11 +11,14 @@
 
         private void OnCounterClicked(object sender, EventArgs e)
         {
-           Random r = new Random();
+            //wyswietlanie wyniku
+            Random r = new Random();
             int ApkaOO = r.Next(1, 7);
-            CounterBtn.Text = "Wylosowany rzut:"+ ApkaOO.ToString();
+            RollValueLabel.Text = "Wylosowany rzut:"+ ApkaOO.ToString();
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            SemanticScreenReader.Announce(RollValueLabel.Text);
+            //kostka k12
+
         }
     }
 

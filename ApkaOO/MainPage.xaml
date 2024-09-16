@@ -14,7 +14,7 @@
                 SemanticProperties.Description="dot net bot in a race car number eight" />
 
             <Label
-                Text="Wybierz kość do gry"
+                Text="Gra w kości"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
@@ -22,6 +22,15 @@
 
             <StackLayout>
                 <Label Text="Wybierz kość do gry" />
+                <RadioButton>
+                    <RadioButton.Content>
+                        <Image
+                         Source="kostkak4.jfif" 
+                         HeightRequest="185"
+                         Aspect="AspectFit"
+               />
+                    </RadioButton.Content>
+                </RadioButton>
                 <RadioButton>
                     <RadioButton.Content>
                         <Image
@@ -56,7 +65,7 @@
                 HorizontalOptions="Fill" />
             <Label
                 x:Name="RollValueLabel"
-                Text="Wynik rzutu"
+                Text="Wynik rzutu: "
                 FontSize="Large"
                 HorizontalTextAlignment="Center"
                 />
