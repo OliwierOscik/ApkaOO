@@ -20,24 +20,7 @@
 
         }
 
-        
-        //private void OnRadioButtonCheckedChanged(object sender, CheckedChangedEventArgs e)
-        //{
-          //  if (e.Value)
-          //  {
-            //    var selectedRadioButton = sender as RadioButton;
-
-              //  if (selectedRadioButton != null)
-                //{
-                   
-                  //  if (selectedRadioButton.Content is Image image)
-                    //{
-                      
-                      //  MainImage.Source = image.Source;
-                    //}
-                //}
-            //}
-        //}
+  
     }
 
 }
