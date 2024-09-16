@@ -11,12 +11,9 @@
 
         private void OnCounterClicked(object sender, EventArgs e)
         {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+           Random r = new Random();
+            int ApkaOO = r.Next(1, 7);
+            CounterBtn.Text = "Wylosowany rzut:"+ ApkaOO.ToString();
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
